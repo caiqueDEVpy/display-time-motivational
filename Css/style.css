@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron:wght@600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+   
+    
+}
+body{
+    background-image: url(/img/samuel-sng-ui5jOU-MTWQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#display-id{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background: linear-gradient(transparent, #ffffff00,transparent);
+    border: none;
+    margin: 10%;
+    padding: 7%;
+    height: 100%;
+    font-size: 5rem;
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+    animation: floating 2s ease-in-out infinite;
+    
+    color: #fff;
+}
+#texto-data{
+    animation: floating 2s ease-in-out infinite;
+}
+#horas-id, #minutos-id, #segundos-id {
+    display: inline-block;
+    width: 2em; /* Defina a largura fixa desejada aqui */
+    text-align: center;
+    padding: 2%;
+    border-radius: 100px;
+    background-color: #25213bce
+    
+}
+#horas-id:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.4s;
+    color: black;
+   
+}
+#minutos-id:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color:transparent;
+    transition: 0.4s;
+    color: black;
+    
+}
+#segundos-id:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color:transparent;
+    transition: 0.4s;
+    color: black;
+    
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem; 
+    background-color: transparent;
+    color: black;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem; 
+    background-color: transparent;
+    color: rgba(233, 233, 233, 0.87); 
+    margin-top: 10%;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+#motivacional-texto{
+    text-align: center;
+}
+#motivacional-texto h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    max-width: 600px;
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+input::placeholder{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+#texto-data{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10%; 
+    color: rgba(233, 233, 233, 0.87);
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@media (max-width: 480px) {
+    #display-id {
+      font-size: 3.5rem;
+      margin: 5%;
+      padding: 5%;
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 5%;
+    }
+  
+    #motivacional-texto h1 {
+      font-size: 2.5rem;
+    }
+    #texto-data{
+        font-size: 2rem;
+    }
+  }
